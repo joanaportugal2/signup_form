@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #27c6da, #5b6cc0);
+}
+
+section {
+    width: 500px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    background: white;
+}
+
+section #signup_top {
+    padding: 40px 40px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+section #signup_top::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+    background: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #3a99d0;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+form div span {
+    font-size: 13px;
+    color: #4e585f;
+}
+
+form div span strong {
+    color: #3a99d0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form input {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #e4f0f6;
+    transition: 500ms ease all;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 1px 0 0 #88d9fc;
+    border-color: #88d9fc;
+}
+
+form input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: none;
+}
+
+form button {
+    cursor: pointer;
+    padding: 15px 60px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background: #3a99d0;
+    margin-right: 16px;
+    transition: 500ms ease all;
+}
+
+form button:hover {
+    background: #1f6b97;
+    transform: scale(0.98);
+}
+
+
+section #signup_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #00b0f3;
+    padding: 60px 40px 40px;
+    color: white;
+}
+
+section #signup_bottom h3 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+ul {
+    display: flex;
+    margin-top: 16px;
+    list-style: none;
+}
+
+ul li {
+    margin-right: 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li i {
+    transition: 500ms ease all;
+}
+
+ul li i:hover {
+    color: #4e585f
+}
